@@ -1,0 +1,35 @@
+6300#config t
+6300(config)#vlan 42
+6300(config-vlan-124)#name vlan42
+6300(config-vlan-124)#exit
+6300(config)#vlan 34
+6300(config-vlan-114)#name vlan34
+6300(config-vlan-114)#exit
+6300(config)#interface 1/1/1
+6300(config-if)#no shutdown
+6300(config-if)#no routing
+6300(config-if)#vlan access 42
+6300(config-if)#exit
+6300(config)#interface 1/1/2
+6300(config-if)#no shutdown
+6300(config-if)#no routing
+6300(config-if)#vlan access 34
+6300(config-if)#exit
+6300(config)#int vlan 42
+6300(config-if-vlan)#ip address 172.16.42.2 255.255.255.192
+6300(config-if-vlan)#exit
+6300(config)#int vlan 34
+6300(config-if-vlan)#ip address 172.16.34.2 255.255.255.192
+6300(config-if-vlan)#exit
+6300(config)#dhcp-server vrf default
+6300(config-dhcp-server)#pool ssharma533
+6300(config-dhcp-server)#range 172.16.42.1 172.16.42.62
+6300(config-dhcp-server)#default-router 172.16.42.1
+6300(config-dhcp-server)#exit
+6300(config-dhcp-server)#pool apanthi
+6300(config-dhcp-server)#range 172.16.34.1 172.16.34.62
+6300(config-dhcp-server)#default-router 172.16.34.1
+6300(config-dhcp-server)#exit
+6300(config-dhcp-server)#authoritative
+6300(config-dhcp-server)#enable
+6300(config-dhcp-server)#exit
