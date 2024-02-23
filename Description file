@@ -1,0 +1,25 @@
+Description of Project1
+
+Project Title: Network Setup with Aruba 6300 Switch
+Overview:
+This project showcases a simple network setup using an Aruba 6300 Switch. The network includes two PCs configured with distinct VLANs and IP addresses within the 172.16.10.128/26 subnet. This setup serves as a foundational example for network segmentation and basic configuration using Aruba networking equipment.
+
+Features:
+Aruba 6300 Switch Integration:
+Central switch providing connectivity and management for the network.
+VLAN Configuration:
+VLAN 42: Assigned to PC1 with IP 172.16.10.129/26.
+VLAN 34: Assigned to PC2 with IP 172.16.10.130/26.
+
+IP Addressing Scheme:
+Utilizes the IP range 172.16.10.128 - 172.16.10.191 with a subnet mask of 255.255.255.192 (/26).
+
+Purpose:
+The purpose of this project is to demonstrate a basic network setup using Aruba networking equipment, specifically the Aruba 6300 Switch. It serves as a learning resource for those interested in network segmentation, VLAN configuration, and IP addressing schemes.
+
+
+Acknowledgements:
+This project is a learning endeavor inspired by the Aruba 6300 Switch and its capabilities in network configuration. Special thanks to the Professor Scott Apted for the invalueable guidance.
+
+About Me:
+I am a network enthusiast passionate about exploring the world of networking technologies. Feel free to connect with me for discussions, feedback, or collaboration opportunities!
